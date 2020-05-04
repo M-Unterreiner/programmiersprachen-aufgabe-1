@@ -73,12 +73,6 @@ double fract(double fract){
     return (fract - i);
 }
 
-TEST_CASE ( "factorial" , " [fac] " ){
-   REQUIRE (factorial(-15) == 0);
-   REQUIRE (factorial(5) == 120);
-   REQUIRE (factorial(10) == 3628800);
-}
-
 std::pair<double, double> cylinder(int r, int h){
   double vol = M_PI * r * r * h;
   double sur = (2*M_PI*(r*r))+(2*M_PI*r*h);
@@ -105,10 +99,46 @@ int factorial(int z){
   } else {
     return 0;
   }
-};
+}
 
 TEST_CASE ( "factorial" , " [fac] " ){
    REQUIRE (factorial(-15) == 0);
    REQUIRE (factorial(5) == 120);
    REQUIRE (factorial(10) == 3628800);
+}
+
+bool is_prime(int z){ 
+  bool prime;
+  
+  if(z == 1){
+    prime = false;
+    std::cout <<" Is not a prime. \n";
+    return prime; 
+  } else if (z == 2){
+    prime = true;
+    std::cout << "Is a prime. \n";
+    return prime;
+  } else if (z > 2){
+    for (int i = 2; i <= z/2; i++){
+      if (z % i == 0){
+	prime = false;
+	std::cout << "Is not a prime. \n";
+	return prime;
+	break;
+      } else {
+        prime = true;
+        std::cout << "Is a prime. \n";
+        return prime;
+      }
+    }
+  } else {
+    return 0;
+  }
+};
+
+TEST_CASE ("is_prime" , " [is_prime]"){
+  REQUIRE (is_prime(0) == 0);
+  REQUIRE (is_prime(2) == true);
+  REQUIRE (is_prime(9) == false);
+  REQUIRE (is_prime(113) == true);
 }
