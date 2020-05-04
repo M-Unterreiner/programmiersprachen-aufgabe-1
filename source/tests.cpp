@@ -79,3 +79,16 @@ TEST_CASE ( "factorial" , " [fac] " ){
    REQUIRE (factorial(10) == 3628800);
 }
 
+std::pair<double, double> cylinder(int r, int h){
+  double vol = M_PI * r * r * h;
+  double sur = (2*M_PI*(r*r))+(2*M_PI*r*h);
+  return {vol, sur};
+}
+
+TEST_CASE ( "cylinder" , " [cylinder] " ){
+  std::pair<double,double> result {cylinder(2,1.5)};
+  std::pair<double,double> reference {12.5664, 37.6991};
+
+  REQUIRE (reference.first  == Approx(result.first));
+  REQUIRE (reference.second == Approx(result.second));
+}
