@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/martin/Msc Human Computer Interaction/Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/source/helloworld.cpp
+iostream
+-
+
