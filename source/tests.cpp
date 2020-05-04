@@ -53,4 +53,29 @@ TEST_CASE ( " checksum " , " [checksum] " )
   REQUIRE ( checksum (11998842) == 42);
 }
 
+int sum_multiples(){
+  int sum_mul = 0;
+  for (int i = 0; i<= 1000; i++)
+    if (i % 3 == 0 || i % 5 == 0){
+      sum_mul += i;
+    }
+  return sum_mul;
+}
+
+TEST_CASE ( " sum_multiples " , " [sum_multiples] " )
+{
+  REQUIRE ( sum_multiples() == 234168);
+}
+
+double fract(double fract){
+  int i = int (fract);
+  std::cout << i << " " << fract << " " << std::endl;
+    return (fract - i);
+}
+
+TEST_CASE ( "factorial" , " [fac] " ){
+   REQUIRE (factorial(-15) == 0);
+   REQUIRE (factorial(5) == 120);
+   REQUIRE (factorial(10) == 3628800);
+}
 
