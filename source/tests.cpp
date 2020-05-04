@@ -92,3 +92,23 @@ TEST_CASE ( "cylinder" , " [cylinder] " ){
   REQUIRE (reference.first  == Approx(result.first));
   REQUIRE (reference.second == Approx(result.second));
 }
+
+int factorial(int z){ 
+  int fac = 1;
+
+  if (z > 0){
+    for( int i = 1; i <= z; i++){
+      fac = fac * i; 
+    }
+    std::cout <<"The factorial: " << fac << std::endl;
+    return fac;
+  } else {
+    return 0;
+  }
+};
+
+TEST_CASE ( "factorial" , " [fac] " ){
+   REQUIRE (factorial(-15) == 0);
+   REQUIRE (factorial(5) == 120);
+   REQUIRE (factorial(10) == 3628800);
+}
