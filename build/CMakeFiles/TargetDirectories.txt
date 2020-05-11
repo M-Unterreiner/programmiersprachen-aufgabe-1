@@ -1,0 +1,8 @@
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/CMakeFiles/rebuild_cache.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/CMakeFiles/edit_cache.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/rebuild_cache.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/main.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/helloworld.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/edit_cache.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/tests.dir
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/build/source/CMakeFiles/mile_to_kilometer.dir

@@ -132,3 +132,15 @@ TEST_CASE ("is_prime" , " [is_prime]"){
   REQUIRE (is_prime(9) == false);
   REQUIRE (is_prime(113) == true);
 }
+
+// ############ 1.15 ############
+double mileToKilometer(double miles){
+  double kilometer; 
+  kilometer = miles * 1.60934; 
+  
+  return kilometer;
+}
+
+TEST_CASE ("miles_to_kilometer" , " [miles_to_kilometer"){
+  REQUIRE (mileToKilometer(1) == Approx(1.60934));
+}

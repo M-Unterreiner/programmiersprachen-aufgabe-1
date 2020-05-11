@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/martin/Msc Human Computer Interaction/022 Bsc Programmiersprachen/Übung2020/programmiersprachen-aufgabe-1/source/mile_to_kilometer.cpp
+iostream
+-
+string
+-
+
