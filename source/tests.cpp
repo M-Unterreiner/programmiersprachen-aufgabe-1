@@ -107,37 +107,17 @@ TEST_CASE ( "factorial" , " [fac] " ){
    REQUIRE (factorial(10) == 3628800);
 }
 
-bool is_prime(int z){ 
-  bool prime;
-  
-  if(z == 1){
-    prime = false;
-    std::cout <<" Is not a prime. \n";
-    return prime; 
-  } else if (z == 2){
-    prime = true;
-    std::cout << "Is a prime. \n";
-    return prime;
-  } else if (z > 2){
-    for (int i = 2; i <= z/2; i++){
-      if (z % i == 0){
-	prime = false;
-	std::cout << "Is not a prime. \n";
-	return prime;
-	break;
-      } else {
-        prime = true;
-        std::cout << "Is a prime. \n";
-        return prime;
-      }
+bool is_prime (int zahl){
+  bool prime = true;
+  for (int i = 2; i < (zahl/2); i++){
+    if (zahl % i == 0){
+      prime = false;
     }
-  } else {
-    return 0;
   }
-};
+  return prime;
+}
 
 TEST_CASE ("is_prime" , " [is_prime]"){
-  REQUIRE (is_prime(0) == 0);
   REQUIRE (is_prime(2) == true);
   REQUIRE (is_prime(9) == false);
   REQUIRE (is_prime(113) == true);
