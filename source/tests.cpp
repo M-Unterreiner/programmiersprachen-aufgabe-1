@@ -10,13 +10,20 @@ int main(int argc, char* argv[])
 }
 
 // ############ 1.8 ############
+// https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
 int gcd(int a, int b){
   // std::cout << "Aufgabe 1.8 \n";
   if(b == 0){
     return a;
   } else if(a == 0){
     return b;
-  } else if(a > b){
+  }    
+  
+  if (a==b){
+    return a;
+  }
+  
+  if(a > b){
     return gcd(a - b, b);
   } else {
     return gcd(a, b - a);
