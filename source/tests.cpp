@@ -9,6 +9,7 @@ int main(int argc, char* argv[])
   return Catch::Session().run(argc, argv);
 }
 
+// ############ 1.8 ############
 int gcd(int a, int b){
   // std::cout << "Aufgabe 1.8 \n";
   if(b == 0){
@@ -29,6 +30,8 @@ TEST_CASE ( " describe_gcd " , " [gcd] " )
   REQUIRE ( gcd (3 ,7) == 1);
 }
 
+
+// ############ 1.9 ############
 int checksum(int check){
 
   int sum = 0;
@@ -53,6 +56,8 @@ TEST_CASE ( " checksum " , " [checksum] " )
   REQUIRE ( checksum (11998842) == 42);
 }
 
+
+// ############ 1.10 ############
 int sum_multiples(){
   int sum_mul = 0;
   for (int i = 0; i<= 1000; i++)
@@ -67,12 +72,15 @@ TEST_CASE ( " sum_multiples " , " [sum_multiples] " )
   REQUIRE ( sum_multiples() == 234168);
 }
 
+
+// ############ 1.11 ############
 double fract(double fract){
   int i = int (fract);
   std::cout << i << " " << fract << " " << std::endl;
     return (fract - i);
 }
 
+// ############ 1.12 ############
 std::pair<double, double> cylinder(int r, int h){
   double vol = M_PI * r * r * h;
   double sur = (2*M_PI*(r*r))+(2*M_PI*r*h);
@@ -87,6 +95,7 @@ TEST_CASE ( "cylinder" , " [cylinder] " ){
   REQUIRE (reference.second == Approx(result.second));
 }
 
+// ############ 1.13 ############
 int factorial(int z){ 
   int fac = 1;
 
@@ -107,6 +116,7 @@ TEST_CASE ( "factorial" , " [fac] " ){
    REQUIRE (factorial(10) == 3628800);
 }
 
+// ############ 1.14 ############
 bool is_prime (int zahl){
   bool prime = true;
   for (int i = 2; i < (zahl/2); i++){
