@@ -58,9 +58,9 @@ TEST_CASE ( " checksum " , " [checksum] " )
 
 
 // ############ 1.10 ############
-int sum_multiples(){
+int sum_multiples(int limit){
   int sum_mul = 0;
-  for (int i = 0; i<= 1000; i++)
+  for (int i = 0; i<= limit; i++)
     if (i % 3 == 0 || i % 5 == 0){
       sum_mul += i;
     }
@@ -69,7 +69,9 @@ int sum_multiples(){
 
 TEST_CASE ( " sum_multiples " , " [sum_multiples] " )
 {
-  REQUIRE ( sum_multiples() == 234168);
+  REQUIRE ( sum_multiples(1000) == 234168);
+  REQUIRE ( sum_multiples(500) == 58418);
+  REQUIRE ( sum_multiples(10) == 33);
 }
 
 
