@@ -23,3 +23,26 @@ int main()
     }
   std::cout << "The found number is" << testingNumber << std::endl;
 }
+
+// int main(){
+//   bool number = false;
+//   int count = 0; 
+// 
+//   
+//   for (int i=1; number != true; i++){
+//     for(int j=1; j <= 20; j++){
+//       if (i % j == 0){
+// 	      count++;
+// 	     if (count == 20){
+// 	      number = true;
+// 	     std::cout << " The number is: " << i << std::endl;
+// 	   }
+//       }
+//       else{
+// 	break;
+//       }
+//     }
+//     count = 0;
+//   }
+// 
+// }
